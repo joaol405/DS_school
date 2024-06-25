@@ -1,0 +1,347 @@
+/* Reset */
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    color:#333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    background-color: #252525;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a.logo {
+    font-size: 2.25rem;
+	font-weight: 300;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu > a {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-menu > a:hover {
+    background: #000;
+}
+
+.language {
+    position: relative;
+    width: 170px;
+    margin-left: 90px;
+    font-weight: bold;
+}
+.language-selected {
+    display: flex;   
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://www.countryflags.io/br/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language-selected.change-br:before {
+    background-image: url(https://www.countryflags.io/br/flat/32.png);
+}
+.language-selected.change-en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.language-selected.change-es:before {
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.language ul li {
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding: 5px 10px;
+}
+
+.language ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br:before {
+    background-image: url(https://www.countryflags.io/br/flat/32.png);
+}
+
+a.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+a.es:before {
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+
+.language:hover ul {
+    display: block;
+}
+
+/* Section */
+.section {
+    text-align: center;
+    padding: 90px 0;
+
+
+
+}
+
+.section h1 {
+    font-size: 2em;
+    margin-bottom: 32px;
+}
+
+.section p {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* Sobre */
+.about {
+    
+    top: 70%;
+    background-color: #252525;
+    padding: 64px 0;
+}
+
+.about-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-container ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.about-container ul li a {
+    color: #8b8b8b;
+}
+
+.about-container ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    padding: 32px;
+    background-color: #000;
+    text-align: center;
+}
+
+footer span {
+    color: #8b8b8b;
+    font-style: italic;
+}
+.language button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0cb8f1;
+}
+.language button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+
+}
+
+
+
+.language {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.header-container a {
+    font-size: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 100px;
+ 
+}
+.search-box input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+ 
+}
+
+.search-txt {
+border: none;
+background: none;
+outline: none;
+padding: 0;
+color: #525252;
+font-size: 14px;
+line-height: 40px;
+}
+
+
+.fundo {
+    margin-top: 25%;
+ margin-left: 20%;
+}
+@media (max-width: 480px) {
+    .search-box input {
+        width: 100%;
+    }
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+   
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu a {
+        padding: 10px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-container ul {
+        width: 100%;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+        
+    }
+
+    .avaliacao{
+        display: flex;
+       }
+      .star-icon{
+        list-style-type: none;
+        border: 1px solid #fff;
+        cursor: pointer;
+        color: #ffe500;
+        font-size: 40px;/* alterar o tamanho das estrelas */
+      }
+      .star-icon::before{
+        content: "\2605";
+      }
+      .star-icon.ativo ~ .star-icon::before{
+        content: "\2606";
+      }
+      .avaliacao:hover .star-icon::before{
+        content: "\2605";
+      }
+      .star-icon:hover ~ .star-icon::before{
+        content: "\2606";
+      }
+
+}
+
